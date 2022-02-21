@@ -27,10 +27,14 @@ public class Deck {
     }
 
     /**
-     * for each card in the deck
-     *
+     * for each index in the deck
+     *swap with another random index
      */
-    private Shuffle (Deck){
+    public void shuffle (Deck){
+
+    }
+
+    public boolean isEmpty (){
 
     }
 
@@ -40,12 +44,15 @@ public class Deck {
      * else, get the nextToDeal element in deck and return it
      * add one to nextToDeal
      * nextToDeal has to be in the range of the deck size
+     *
+     * start at next to deal index, pick random number fron mext to deal to the end of the deck,
+     *
      */
-    private Deal (Deck) {
-        if (nextToDeal == contents.size()-1){
+    public Card deal() {
+        if (nextToDeal == contents.size()-1){ //this goes into its own method
             return null;
         else{
-
+            return contents.get(nextToDeal);
             }
 
         }
